@@ -4,7 +4,7 @@ int main()
 {
 		/* Este es mi primer programa en C*/
 
-		printf("Bienvenido a la programación en lenguaje C\n");
+		int *puts("Bienvenido a la programación en lenguaje C\n");
 
 			return 0;
 
