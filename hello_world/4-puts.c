@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-		/* Este es mi primer programa en C*/
-
-		printf("Bienvenido a la programación en lenguaje C\n");
-
-			return 0;
-
+	puts("Programming is like building a multilingual puzzle");
+	return (0);
 }
+
