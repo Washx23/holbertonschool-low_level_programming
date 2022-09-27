@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int inttype;
+	int intType;
 	float floatType;
 	double doubleType;
 	char charType;
