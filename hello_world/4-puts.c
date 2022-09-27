@@ -1,13 +1,11 @@
-#!/bin/bash
-
 #include <stdio.h>
 
-int main()
+main()
 {
+		/* Este es mi primer programa en C*/
 
-	int *puts("Programming is like building a multilingual puzzle*s)
-		return=0
+		printf("Bienvenido a la programación en lenguaje C\n");
 
+			return 0;
 
 }
-
