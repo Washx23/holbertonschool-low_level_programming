@@ -4,6 +4,7 @@
 /**
  * main-assigns
  * betty style doc for function main goes there
+ * Return: always 0 (Success)
  */
 int main(void)
 {
