@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * main - funcion
- * @i: variable
  * Return: always
  */
 int main(void)
