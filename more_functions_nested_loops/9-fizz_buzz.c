@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- *
- *
+ * main - funcion
+ * @i: variable
  */
 int main(void)
 {
 	int i;
 
-	for ( i = 1; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 15 == 0)
 		{
