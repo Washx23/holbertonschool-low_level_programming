@@ -3,7 +3,7 @@
 /**
  * print_square - funcion
  * Return: result
- * @n: variable
+ * @size: variable
  */
 void print_square(int size)
 {
