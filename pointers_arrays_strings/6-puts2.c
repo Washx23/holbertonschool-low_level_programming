@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - fucion
+ * puts2 - fucion
  * @str: variable
  * Return: always
  */
