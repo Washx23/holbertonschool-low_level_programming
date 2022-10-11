@@ -8,7 +8,7 @@
 
 void puts2(char *str)
 {
-	while (*str)
+	while (*str != 'H')
 	{
 		_putchar(*str);
 		str = str + 2;
