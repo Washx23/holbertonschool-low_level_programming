@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * print_array - funcion
+ * @a: pointer
+ * @n: variable in pinter
  */
 void print_array(int *a, int n)
 {
@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 	{
 		if (i == n - 1)
 			printf("%d", a[i]);
-		else		
+		else
 		{
 			a[n] = a[n + 1];
 			printf("%d, ", a[i]);
