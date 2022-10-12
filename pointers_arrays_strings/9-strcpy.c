@@ -4,6 +4,7 @@
  * *_strcpy - funcion
  * @src: pointer
  * @dest: pointer
+ * Return: always
  */
 char *_strcpy(char *dest, char *src)
 {
