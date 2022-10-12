@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
+ * puts_half - funcion
  *
  *
- *
- *
- *
+ * @str: srting
  */
 void puts_half(char *str)
 {
@@ -16,8 +15,7 @@ void puts_half(char *str)
 	{
 		c++;
 	}
-	len = (c) / 2;	
-	
+	len = (c - 1) / 2;
 	while (len < c && len != c)
 	{
 		_putchar(str[len]);
