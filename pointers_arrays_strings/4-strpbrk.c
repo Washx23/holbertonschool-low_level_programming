@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * @s:
- * 
- *
- *
+ * *_strpbrk - funcion
+ * @s: pointer
+ * @accept: pointer
+ * Return: always
  */
 char *_strpbrk(char *s, char *accept)
 {
