@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *_memset - funcion
- * @b: variable
- * @s: pointer
+ * *_memcpy - funcion
+ * @dest: variable
+ * @src: pointer
  * @n: unsigned variable
  * Return: always
  */
