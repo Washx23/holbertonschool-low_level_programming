@@ -2,7 +2,7 @@
 
 /**
  *print_chessboard - function
- *@a: array 
+ *@a: array
  *
  */
 
