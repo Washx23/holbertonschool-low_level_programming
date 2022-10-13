@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	
 	for (i = 0; s[i] != c && s[i] != '\0'; i++)
 		;
-	if (s[i] != '\0')
+	if (s[i] == '\0')
 	{
 		return ('\0');
 	}	
