@@ -20,7 +20,7 @@ void reverse_array(int *a, int n)
 
 	for (i = 0, j = c - 1; i < j; i++, j--)
 	{
-		char ch = i;
+		int ch = i;
 
 		a[i] = a[j];
 		a[j] = ch;
