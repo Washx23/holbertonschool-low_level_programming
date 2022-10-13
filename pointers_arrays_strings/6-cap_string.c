@@ -26,13 +26,6 @@ char *cap_string(char *i)
 				i[p] = i[p] - 32;
 			}
 		}
-		else if (i[p - 1] >= 48 && i[p - 1] <= 57)
-		{
-			if (i[p] >= 97 && i[p] <= 122)
-			{
-				i[p] = i[p] - 32;
-			}
-		}
 		else if (i[p - 1] >= 9 && i[p - 1] <= 10)
 		{
 			if (i[p] >= 97 && i[p] <= 122)
