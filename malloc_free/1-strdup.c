@@ -8,8 +8,11 @@ char *_strcpy(char *dest, char *src);
 char *_strdup(char *str)
 {
 	char *a = NULL;
+	int i = 0;
 
-	a = malloc(sizeof(str));
+	for (i = 0; str[i]; i++)
+		;
+	a = malloc(i + 1);
 	if (a == NULL)
 		return (NULL);
 	a = _strcpy(a, str);
