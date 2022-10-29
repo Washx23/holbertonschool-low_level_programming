@@ -32,7 +32,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		modok->owner = strdup(owner);
 		if (modok->owner == NULL)
 		{
-			free(name)
+			free(name);
 			free(modok);
 			return (NULL);
 		}
