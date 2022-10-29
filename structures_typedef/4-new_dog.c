@@ -16,6 +16,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *modok = NULL;
 
 	modok = malloc(sizeof(dog_t));
+	if (modok == NULL)
+	{
+		free(modok);
+	}
 
 	if (modok != NULL)
 	{
@@ -32,10 +36,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 			return (NULL);
 		}
 		modok->age = age;
-	}
-	if (modok == NULL)
-	{
-		free(modok);
 	}
 	return (modok);
 }
