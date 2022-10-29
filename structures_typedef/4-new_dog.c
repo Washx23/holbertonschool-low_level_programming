@@ -23,20 +23,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (modok != NULL)
 	{
-		modok->name = strdup(name);
 		if (modok->name == NULL)
 		{
 			free(modok);
 			return (NULL);
 		}
-		modok->owner = strdup(owner);
+		else 
+			modok->name = strdup(name);
+
 		if (modok->owner == NULL)
 		{
 			free(modok->name);
 			free(modok);
 			return (NULL);
 		}
-		modok->age = stardup(age);
+		else 
+			modok->owner = strdup(owner);
+		modok->age = age;
 	}
 	return (modok);
 }
