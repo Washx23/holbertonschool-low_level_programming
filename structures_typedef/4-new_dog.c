@@ -34,6 +34,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		modok->age = age;
 	}
 	if (modok == NULL)
-		return(NULL);
+	{
+		free(modok);
+	}
 	return (modok);
 }
