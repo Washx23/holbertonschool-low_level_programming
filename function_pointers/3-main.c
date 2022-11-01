@@ -1,14 +1,33 @@
 #include "3-calc.h"
 
 /**
- *
- *
- *
- *
- *
+ * main - funcion
+ * @argc: integer
+ * @argv: intger
+ * Return: always
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	get_op_func("+")(2,3);
+	int num1;
+	int num2;
+
+	if (argc)
+	{
+		if (argc > 4)
+		{
+			printf("error\n");
+			exit(98);
+		}
+		if (*argv[3] == '0')
+		{
+			printf("error\n");
+			exit(100);
+		}
+		{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[3]);
+		printf("%d\n", get_op_func(argv[2])(num1, num2));
+		}
+	}
 	return (0);
 }

@@ -1,11 +1,10 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <string.h>
 /**
- *
- *
- *
- *
- *
+ * get_op_func - funcion
+ * @s: pointer
+ * Return: always
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -17,8 +16,20 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
-	
-	printf("%s\n", ops[0].op);
-	return (ops[0].f);
+	int i = 0;
+
+	while (i <= 5)
+	{
+		if (strcmp(s, ops[i].op) == 0)
+		{
+			return (ops[i].f);
+		}
+		else
+		{
+			printf("error\n");
+			exit(99);
+		}
+		i++;
+	}
+	return (NULL);
 }

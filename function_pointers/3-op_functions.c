@@ -8,7 +8,7 @@
  */
 int op_add(int a, int b)
 {
-	return(a + b);
+	return (a + b);
 }
 
 /**
@@ -18,9 +18,9 @@ int op_add(int a, int b)
  *Return: a - b
  */
 
- int op_sub(int a, int b)
+int op_sub(int a, int b)
 {
-	return(a - b);
+	return (a - b);
 }
 /**
  *op_mul - la multiplicacion de a y b
@@ -29,7 +29,7 @@ int op_add(int a, int b)
  *Return: a * b
  */
 
- int op_mul(int a, int b)
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
