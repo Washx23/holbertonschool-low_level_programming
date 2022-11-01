@@ -13,15 +13,20 @@ int main(int argc, char *argv[])
 
 	if (argc)
 	{
-		if (argc > 4)
+		if (argc > 2)
 		{
 			printf("Error\n");
-			exit(98);
+			exit(99);
 		}
-		if (*argv[3] == '0' || *argv[3] == 0)
+		if (*argv[3] == '0')
 		{
 			printf("Error\n");
 			exit(100);
+		}
+		else if (strlen(argv[2]) > 1)
+		{
+			printf("Error\n");
+			exit(98);
 		}
 		{
 		num1 = atoi(argv[1]);
