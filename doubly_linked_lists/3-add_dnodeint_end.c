@@ -7,43 +7,32 @@ dlistint_t *add(const int n);
  *@n: integrers
  *Return: the new node
  */
-
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *aux = *head;
-	dlistint_t *node = NULL;
+	dlistint_t *h;
+	dlistint_t *new;
 
-	if (aux == NULL)
-	{
-		*head = add(n);
-		return (*head);
-	}
-	while (aux->next != NULL)
-	{
-		aux = aux->next;
-	}
-	node = add(n);
-	aux->next = node;
-
-	return (aux->next);
-}
-
-/**
- *add - function that creates a new node
- *@n: the imput that the function receives
- *Return: the new node
- */
-dlistint_t *add(const int n)
-{
-	dlistint_t *nnode = NULL;
-
-	nnode = malloc(sizeof(dlistint_t));
-	if (!nnode)
-	{
-		free(nnode);
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
 		return (NULL);
+
+	new->n = n;
+	new->next = NULL;
+
+	h = *head;
+
+	if (h != NULL)
+	{
+		while (h->next != NULL)
+			h = h->next;
+		h->next = new;
 	}
-	nnode->n = n;
-	nnode->next = NULL;
-	return (nnode);
+	else
+	{
+		*head = new;
+	}
+
+	new->prev = h;
+
+	return (new);
 }
